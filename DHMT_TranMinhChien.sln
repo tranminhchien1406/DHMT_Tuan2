@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bai2", "Bai2\Bai2.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bai3", "Bai3\Bai3.vcxproj", "{0BD37804-98DE-4A87-B623-4865D87CFF1D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LapPhuong3D", "LapPhuong3D\LapPhuong3D.vcxproj", "{D81026DF-89EC-4E08-ACAD-DFDAF6581DA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{0BD37804-98DE-4A87-B623-4865D87CFF1D}.Release|x64.Build.0 = Release|x64
 		{0BD37804-98DE-4A87-B623-4865D87CFF1D}.Release|x86.ActiveCfg = Release|Win32
 		{0BD37804-98DE-4A87-B623-4865D87CFF1D}.Release|x86.Build.0 = Release|Win32
+		{D81026DF-89EC-4E08-ACAD-DFDAF6581DA4}.Debug|x64.ActiveCfg = Debug|x64
+		{D81026DF-89EC-4E08-ACAD-DFDAF6581DA4}.Debug|x64.Build.0 = Debug|x64
+		{D81026DF-89EC-4E08-ACAD-DFDAF6581DA4}.Debug|x86.ActiveCfg = Debug|Win32
+		{D81026DF-89EC-4E08-ACAD-DFDAF6581DA4}.Debug|x86.Build.0 = Debug|Win32
+		{D81026DF-89EC-4E08-ACAD-DFDAF6581DA4}.Release|x64.ActiveCfg = Release|x64
+		{D81026DF-89EC-4E08-ACAD-DFDAF6581DA4}.Release|x64.Build.0 = Release|x64
+		{D81026DF-89EC-4E08-ACAD-DFDAF6581DA4}.Release|x86.ActiveCfg = Release|Win32
+		{D81026DF-89EC-4E08-ACAD-DFDAF6581DA4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
