@@ -16,18 +16,13 @@ void specialFunc(int key, int x, int y);
 
 
 
-////////////////////////////////////////////////////////////////////////////////////
+//------------------------------------------------------------//
 
 
 
 void countFrames(void);
 void renderBitmapString(float x, float y, float z, void* font, char* string);
-
-
-
-////////////////////////////////////////////////////////////////////////////////////
-
-
+//------------------------------------------------------------//
 
 bool bUsePredefinedCamera = true;
 
@@ -48,7 +43,7 @@ float viewerUp[3] = { 0.0 , 1.0 , 0.0 };
 float navigationRotation[3] = { 0.0 , 0.0 , 0.0 };
 
 
-////////////////////////////////////////////////////////////////////////////////////
+//-------------------------------------------------------------//
 
 
 
@@ -225,23 +220,17 @@ void mouseFunc(int button, int state, int x, int y) {
 	mousePressedX = x;
 	mousePressedY = y;
 }
-////////////////////////////////////////////////////////////////////////////////////
+//---------------------------------------------------------------//
 void mouseMotionFunc(int x, int y) {
 	float xOffset = 0.0, yOffset = 0.0, zOffset = 0.0;
-
-
-
 	if (leftMouseButtonActive) {
 		navigationRotation[0] += ((mousePressedY - y) * 180.0f) / 200.0f;
 		navigationRotation[1] += ((mousePressedX - x) * 180.0f) / 200.0f;
 
-
 		mousePressedY = y;
 		mousePressedX = x;
 	}
-
 	//panning
-
 	else if (middleMouseButtonActive) {
 		xOffset = (mousePressedX + x);
 		if (!lastXoffset == 0.0) {
@@ -292,26 +281,12 @@ void keyboardFunc(unsigned char key, int x, int y) {
 			glutReshapeWindow(640, 480);
 		}
 		break;
-
-		////////////////////////////////////////////////////////////////////////////////////
-
-
 	}
 }
-
-
-////////////////////////////////////////////////////////////////////////////////////
-
-
-
+//-------------------------------------------------------------//
 void specialFunc(int key, int x, int y) {
 }
-
-
-////////////////////////////////////////////////////////////////////////////////////
-
-
-
+//---------------------------------------------------------//
 void countFrames(void) {
 	time = glutGet(GLUT_ELAPSED_TIME);
 	cframe++;
@@ -341,12 +316,7 @@ void countFrames(void) {
 	glPopMatrix();
 	glMatrixMode(GL_MODELVIEW);
 }
-
-
-
-////////////////////////////////////////////////////////////////////////////////////
-
-
+//----------------------------------------------------------------//
 
 void renderBitmapString(float x, float y, float z, void* font, char* string)
 {
@@ -356,12 +326,7 @@ void renderBitmapString(float x, float y, float z, void* font, char* string)
 		glutBitmapCharacter(font, *c);
 	}
 }
-
-
-////////////////////////////////////////////////////////////////////////////////////
-
-
-
+//------------------------------------------------------------------/
 void main(int argc, char** argv) {
 	printf("simpleGLUT\n\tGordon Wetzstein [gordon,wetzstein@medien.uni-weimar.de]\n\n");
 	printf("keys:\n\tf\t- toggle fullscreen\n\tesc\t- exit\n\n");
